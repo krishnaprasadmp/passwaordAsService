@@ -75,4 +75,9 @@ following query parameters may be supplied:
    3. mvn spring-boot:run
 
    
- Note: This application runs only unix commands /etc/passwd/ and /etc/groups . So you have to run in linux machine or Mac not in windows
+ Note:
+  1.This application runs only unix commands /etc/passwd/ and /etc/groups . So you have to run in linux machine 
+ not in Mac not in windows
+ For mac etc/passwd contains comment but for linux not
+  2. This application runs on port number 8080
+  3. If you want to check error please go to the log files located at /usr/tmp/passwdAsServiceRestApi.log

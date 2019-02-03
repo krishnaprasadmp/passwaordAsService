@@ -73,7 +73,6 @@ public class PasswordAsServiceControllerTests {
         when(passwdService.getUserService(any())).thenReturn(users);
         mockMvc.perform(get("/api/users/5").contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andDo(print())
                 .andExpect(jsonPath("$.name", is("games")))
                 .andExpect(jsonPath("$.uid", is(5)));
     }
